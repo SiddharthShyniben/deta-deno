@@ -1,3 +1,3 @@
 # deta
 
-Deta library for Javascript
+Deta library for deno, ported from deta/deta-javascript.
