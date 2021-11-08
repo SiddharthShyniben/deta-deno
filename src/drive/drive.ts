@@ -1,12 +1,12 @@
-import url from '../constants/url';
-import { isNode } from '../utils/node';
-import { KeyType } from '../types/key';
-import Requests from '../utils/request';
-import { isString } from '../utils/string';
-import { DriveApi } from '../constants/api';
-import { ObjectType } from '../types/basic';
-import { PutOptions, ListOptions } from '../types/drive/request';
-import { stringToUint8Array, bufferToUint8Array } from '../utils/buffer';
+import url from '../constants/url.ts';
+import { isNode } from '../utils/node.ts';
+import { KeyType } from '../types/key.ts';
+import Requests from '../utils/request.ts';
+import { isString } from '../utils/string.ts';
+import { DriveApi } from '../constants/api.ts';
+import { ObjectType } from '../types/basic.ts';
+import { PutOptions, ListOptions } from '../types/drive/request.ts';
+import { stringToUint8Array, bufferToUint8Array } from '../utils/buffer.ts';
 
 import {
   GetResponse,
@@ -15,7 +15,7 @@ import {
   UploadResponse,
   DeleteResponse,
   DeleteManyResponse,
-} from '../types/drive/response';
+} from '../types/drive/response.ts';
 
 export default class Drive {
   private requests: Requests;

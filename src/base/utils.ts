@@ -1,5 +1,5 @@
-import { Action, ActionTypes } from '../types/action';
-import { ArrayType, BasicType } from '../types/basic';
+import { Action, ActionTypes } from '../types/action.ts';
+import { ArrayType, BasicType } from '../types/basic.ts';
 
 export default class BaseUtils {
   public trim(): Action {

@@ -1,4 +1,4 @@
-import { Action } from './action';
+import { Action } from './action.ts';
 
 export type BasicType = string | number | boolean;
 

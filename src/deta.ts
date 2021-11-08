@@ -1,6 +1,6 @@
-import BaseClass from './base';
-import DriveClass from './drive';
-import { KeyType } from './types/key';
+import BaseClass from './base.ts';
+import DriveClass from './drive.ts';
+import { KeyType } from './types/key.ts';
 
 export default class Deta {
   private key: string;

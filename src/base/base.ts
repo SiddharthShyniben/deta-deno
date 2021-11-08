@@ -1,12 +1,12 @@
-import BaseUtils from './utils';
-import url from '../constants/url';
-import { KeyType } from '../types/key';
-import Requests from '../utils/request';
-import { BaseApi } from '../constants/api';
-import { isObject } from '../utils/object';
-import { FetchOptions } from '../types/base/request';
-import { Action, ActionTypes } from '../types/action';
-import { DetaType, CompositeType, ArrayType, ObjectType } from '../types/basic';
+import BaseUtils from './utils.ts';
+import url from '../constants/url.ts';
+import { KeyType } from '../types/key.ts';
+import Requests from '../utils/request.ts';
+import { BaseApi } from '../constants/api.ts';
+import { isObject } from '../utils/object.ts';
+import { FetchOptions } from '../types/base/request.ts';
+import { Action, ActionTypes } from '../types/action.ts';
+import { DetaType, CompositeType, ArrayType, ObjectType } from '../types/basic.ts';
 
 import {
   GetResponse,
@@ -16,7 +16,7 @@ import {
   InsertResponse,
   UpdateResponse,
   PutManyResponse,
-} from '../types/base/response';
+} from '../types/base/response.ts';
 
 export default class Base {
   private requests: Requests;

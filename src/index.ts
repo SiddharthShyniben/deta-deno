@@ -1,7 +1,7 @@
-import DetaClass from './deta';
-import BaseClass from './base';
-import DriveClass from './drive';
-import { KeyType } from './types/key';
+import DetaClass from './deta.ts';
+import BaseClass from './base.ts';
+import DriveClass from './drive.ts';
+import { KeyType } from './types/key.ts';
 
 /**
  * Deta returns instance of Deta class
@@ -17,7 +17,7 @@ export function Deta(projectKey?: string, authToken?: string): DetaClass {
     return new DetaClass(token, KeyType.AuthToken, key);
   }
 
-  const apiKey = key || process.env.DETA_PROJECT_KEY?.trim();
+  const apiKey = key || Deno.env.get('DETA_PROJECT_KEY')?.trim();
   if (!apiKey) {
     throw new Error('Project key is not defined');
   }

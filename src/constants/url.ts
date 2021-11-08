@@ -11,7 +11,7 @@ const url = {
  */
 function base(host?: string): string {
   const hostPath =
-    host?.trim() || process.env.DETA_BASE_HOST?.trim() || 'database.deta.sh';
+    host?.trim() || Deno.env.get('DETA_BASE_HOST')?.trim() || 'database.deta.sh';
   return url.BASE.replace(':host', hostPath);
 }
 
@@ -23,7 +23,7 @@ function base(host?: string): string {
  */
 function drive(host?: string): string {
   const hostPath =
-    host?.trim() || process.env.DETA_DRIVE_HOST?.trim() || 'drive.deta.sh';
+    host?.trim() || Deno.env.get('DETA_DRIVE_HOST')?.trim() || 'drive.deta.sh';
   return url.DRIVE.replace(':host', hostPath);
 }
 

@@ -1,4 +1,4 @@
-import { KeyType } from '../types/key';
+import { KeyType } from '../types/key.ts';
 
 interface RequestInit {
   payload?: any;

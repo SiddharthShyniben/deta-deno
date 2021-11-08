@@ -1,4 +1,4 @@
-import { NullType } from '../basic';
+import { NullType } from '../basic.ts';
 
 export type GetResponse = Blob | NullType;
 

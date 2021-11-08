@@ -1,3 +1,3 @@
-import Drive from './drive';
+import Drive from './drive.ts';
 
 export default Drive;
